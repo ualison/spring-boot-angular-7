@@ -1,0 +1,22 @@
+<div *ngIf="game">
+  <div>
+    <label>Nome: </label> {{game.name}}
+  </div>
+  <div>
+    <label>Publicadora: </label> {{game.publisher}}
+  </div>
+  <div>
+    <label>Preço: </label> {{game.price}}
+  </div>
+  <div>
+    <label>Active: </label> {{game.active}}
+  </div>
+
+  <span class="button is-small btn-primary" *ngIf='game.active' (click)='updateActive(false)'>Inactive</span>
+
+  <span class="button is-small btn-primary" *ngIf='!game.active' (click)='updateActive(true)'>Active</span>
+
+  <span class="button is-small btn-danger" (click)='deleteGame()'>Delete</span>
+
+  <hr/>
+</div>

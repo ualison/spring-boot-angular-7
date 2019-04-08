@@ -1,0 +1,23 @@
+<mat-grid-list cols="5" rowHeight="3:3">
+  <tr *ngFor="let game of game | async">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>
+          {{game.name}}
+        </mat-card-title>
+    
+        <mat-card-subtitle>
+          {{game.publisher}}
+        </mat-card-subtitle>
+    
+        <mat-card-subtitle>
+          {{game.price}}
+        </mat-card-subtitle>
+    
+        <mat-card-actions>
+          <button mat-raised-button color="warn" (click)="deleteGame(game.id)">Delete</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </tr>
+  </mat-grid-list>

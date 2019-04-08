@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <span>{{title}}</span>
+</mat-toolbar>
+  <mat-toolbar color="accent">
+      <span > 
+        <a mat-raised-button color="warn" routerLink="game" class="btn btn-primary active" role="button" routerLinkActive="active">Jogos Cadastrados</a>
+      </span>
+      <span style="margin-left: 15px;">
+        <a mat-raised-button color="warn" routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Cadastrar um Jogo</a>
+      </span>
+    </mat-toolbar>
+    <div style="margin-left: 20px;margin-right: 20px;">
+      <router-outlet></router-outlet>
+    </div>
