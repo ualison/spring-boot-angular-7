@@ -1,2 +1,2 @@
 # spring-boot-angular-7
-CRUD using Spring Boot Server (Back-end) and Angular 7 Client (Front-end)
+CRUD using Spring Boot Server, Angular 7 Client and Database MySQL
